@@ -2,6 +2,7 @@
 
 Claude Desktop과 Git for Windows가 설치된 Windows 사용자가 Claude 채팅에 프롬프트를 한 번 붙여 넣어 다음 도구를 준비할 수 있게 돕는 프로젝트입니다.
 
+- winget (Windows 패키지 관리자, 없으면 준비)
 - Claude Code CLI
 - GitHub CLI
 - Git 기본 사용자 이름·이메일
@@ -28,18 +29,18 @@ Claude Code 로그인을 뺀 나머지 과정에서는 사용자가 터미널 �
 
 ## 프롬프트가 하는 일
 
-1. `winget`과 각 도구의 설치 여부를 확인합니다.
+1. `winget`을 가장 먼저 확인하고, 없으면 Microsoft 공식 절차로 준비합니다. 끝내 사용할 수 없으면 GitHub CLI만 건너뛰고 나머지는 계속 진행합니다.
 2. Claude Code CLI가 없으면 공식 설치 스크립트로 설치합니다. 이 설치본은 백그라운드에서 자동으로 최신 버전을 받으므로 따로 업데이트하지 않습니다.
 3. GitHub CLI는 설치된 버전과 최신 버전을 비교해 없는 경우에만 설치하고, 업데이트는 사용자 확인 후에만 진행합니다.
 4. 기존 Git 설정과 GitHub 로그인을 보존합니다.
-5. `claude --version`, `claude doctor`, `gh --version`, `git config --global user.name`, `git config --global user.email`, `gh auth status`로 최종 상태를 검증합니다.
+5. `winget --version`, `claude --version`, `claude doctor`, `gh --version`, `git config --global user.name`, `git config --global user.email`, `gh auth status`로 최종 상태를 검증합니다.
 
 ## 보안 안내
 
 - 비밀번호, GitHub 토큰, Anthropic 계정 비밀번호, 인증 코드, API 키, 개인 키를 Claude 채팅에 보내지 마세요.
 - GitHub 로그인, Claude Code 로그인, Windows 관리자 권한 요청은 본인이 표시된 화면에서 직접 처리하세요.
-- 프롬프트는 Claude Code 공식 설치 스크립트(`https://claude.ai/install.ps1`)와 winget 공식 패키지만 사용하도록 지시합니다. 그 밖의 설치 스크립트나 다운로드 파일은 사용하지 않습니다.
-- `winget`을 사용할 수 없으면 비공식 다운로드 파일을 사용하지 않고, Claude가 안전한 다음 조치를 안내합니다.
+- 프롬프트는 Microsoft Store의 앱 설치 관리자, Claude Code 공식 설치 스크립트(`https://claude.ai/install.ps1`), winget의 공식 패키지 세 경로만 사용하도록 지시합니다. 그 밖의 설치 스크립트나 다운로드 파일은 사용하지 않습니다.
+- `winget`을 사용할 수 없으면 Microsoft 공식 절차로 등록을 시도하고, 그래도 안 되면 Microsoft Store 공식 페이지를 안내합니다. 비공식 다운로드 파일은 사용하지 않습니다.
 
 ## 공식 출처
 
@@ -47,6 +48,7 @@ Claude Code 로그인을 뺀 나머지 과정에서는 사용자가 터미널 �
 - [Claude Desktop 시작하기](https://code.claude.com/docs/en/desktop-quickstart)
 - [Git for Windows 설치](https://git-scm.com/downloads/win)
 - [GitHub CLI](https://cli.github.com/)
+- [winget 설치 문서](https://learn.microsoft.com/windows/package-manager/winget/)
 
 ## 범위
 
