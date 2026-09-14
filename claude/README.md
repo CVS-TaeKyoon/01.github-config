@@ -11,8 +11,8 @@ Claude Desktop과 Git for Windows가 설치된 Windows 사용자가 Claude 채�
 
 ## 전제 조건
 
-- Claude Desktop 설치 완료
-- Git for Windows 설치 완료
+- Claude Desktop 설치 완료 — [설치 매뉴얼](docs/2.%20Claude_Desktop_설치_매뉴얼.pdf)
+- Git for Windows 설치 완료 — [설치 매뉴얼](docs/1.%20Git_for_Windows_설치_매뉴얼.pdf)
 - Claude Code를 쓸 수 있는 유료 구독(Pro, Max, Team, Enterprise 중 하나)
 
 Claude Desktop에는 Claude Code가 이미 들어 있습니다. 그런데도 CLI를 따로 설치하는 이유는 터미널에서 `claude` 명령을 직접 실행하고, 편집기나 스크립트에서 Claude Code를 불러 쓰기 위해서입니다.
@@ -26,6 +26,8 @@ Claude Desktop에는 Claude Code가 이미 들어 있습니다. 그런데도 CLI
 5. Claude Code 로그인이 필요하면 안내에 따라 새 PowerShell 창에서 `claude`를 한 번 실행합니다.
 
 Claude Code 로그인을 뺀 나머지 과정에서는 사용자가 터미널 명령을 직접 입력하거나 설정 파일을 편집할 필요가 없도록 프롬프트를 구성했습니다.
+
+화면 캡처를 보며 따라가려면 [환경 구축 프롬프트 실행 매뉴얼](docs/3.%20환경_구축_프롬프트_실행_매뉴얼.pdf)을 참고하세요. Code 화면으로 전환하고 모델을 설정한 뒤 프롬프트를 실행하는 과정을 단계별로 안내합니다.
 
 ## 프롬프트가 하는 일
 
