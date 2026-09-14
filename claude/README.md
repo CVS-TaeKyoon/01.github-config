@@ -1,3 +1,5 @@
+[설치 프롬프트로 가기](prompts/windows-dev-environment-setup.ko.md)
+
 # Windows Claude Code 개발 환경 온보딩
 
 Claude Desktop과 Git for Windows가 설치된 Windows 사용자가 Claude 채팅에 프롬프트를 한 번 붙여 넣어 다음 도구를 준비할 수 있게 돕는 프로젝트입니다.
