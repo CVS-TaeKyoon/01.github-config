@@ -1,4 +1,4 @@
-[설치 프롬프트로 가기](prompts/windows-dev-environment-setup.ko.md)
+# [설치 프롬프트로 가기](prompts/windows-dev-environment-setup.ko.md)
 
 # Windows Codex CLI 개발 환경 온보딩
 
